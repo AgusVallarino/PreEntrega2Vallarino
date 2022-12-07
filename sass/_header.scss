@@ -1,0 +1,60 @@
+.header { 
+    grid-area: header;
+    background-color: black;
+    display:flex;
+    height: 100%;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    .logo{
+        margin-left: 10px;
+        height: 70px;
+        align-self: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        }
+    .nav{
+        justify-items: end;
+        width: 80%;
+        margin-right: 50px;
+        text-align: right;
+        align-self: center;
+        .menu{
+            background-color:black;
+            padding: 0%;
+            list-style-type: none;
+            margin: 0px auto;
+            text-align: right;
+            font-family:"BebasNeue-Regular";
+            .item{ 
+                display: inline-block;
+                position:relative;
+                text-align:right;
+                & a{
+                    padding: 10px;
+                    margin: 10px;
+                    color: white;
+                    text-decoration: none;
+                    display: inline-block;
+                    }
+                 a:hover{
+                        color: black;
+                        background-color: white;
+                        font-weight: bold;
+                          }
+                .submenuservicios {
+                                position:absolute;
+                                display: none;
+                                .subitem1{
+                                        display: block;
+                                        padding: auto;
+                                        background-color: black;    
+                                        }
+                                }
+                &:hover .submenuservicios{
+                                            display: block;
+                                            }            
+                    }
+            }   
+    
+        }
+}

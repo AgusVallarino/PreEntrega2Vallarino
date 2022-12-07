@@ -1,0 +1,310 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url(../‌Font/BebasNeue-Regular.ttf); }
+
+@font-face {
+  font-family: "CabinSketch-Regular";
+  src: url(../‌Font/CabinSketch-Regular.ttf); }
+
+@font-face {
+  font-family: "PTSansNarrow-Regular";
+  src: url(../‌Font/PTSansNarrow-Regular.ttf); }
+
+body {
+  font-family: PTSansNarrow-Regular; }
+
+h1, h2, h3, h4 {
+  font-family: BebasNeue-Regular;
+  padding: 10px; }
+
+.header {
+  grid-area: header;
+  background-color: black;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  font-size: 1.2rem; }
+  .header .logo {
+    margin-left: 10px;
+    height: 70px;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .header .nav {
+    justify-items: end;
+    width: 80%;
+    margin-right: 50px;
+    text-align: right;
+    align-self: center; }
+    .header .nav .menu {
+      background-color: black;
+      padding: 0%;
+      list-style-type: none;
+      margin: 0px auto;
+      text-align: right;
+      font-family: "BebasNeue-Regular"; }
+      .header .nav .menu .item {
+        display: inline-block;
+        position: relative;
+        text-align: right; }
+        .header .nav .menu .item a {
+          padding: 10px;
+          margin: 10px;
+          color: white;
+          text-decoration: none;
+          display: inline-block; }
+        .header .nav .menu .item a:hover {
+          color: black;
+          background-color: white;
+          font-weight: bold; }
+        .header .nav .menu .item .submenuservicios {
+          position: absolute;
+          display: none; }
+          .header .nav .menu .item .submenuservicios .subitem1 {
+            display: block;
+            padding: auto;
+            background-color: black; }
+        .header .nav .menu .item:hover .submenuservicios {
+          display: block; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header" "video video" "servicios servicios" "nosotros contacto" "footer footer"; }
+
+.video {
+  grid-area: video;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2; }
+  .video video {
+    height: 95%;
+    z-index: -1; }
+  .video .titsect2 {
+    font-size: 2rem;
+    font-family: "CabinSketch-Regular";
+    z-index: -1;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.servicios {
+  grid-area: servicios;
+  background-color: #67afaf;
+  color: #2b2727;
+  height: 470px;
+  text-align: center;
+  align-items: center; }
+  .servicios .titsec2 {
+    text-align: left;
+    padding-left: 60px; }
+  .servicios .div1 {
+    display: inline-block;
+    margin: 0px auto;
+    padding: 60px;
+    text-align: center;
+    font-family: "CabinSketch-Regular"; }
+    .servicios .div1 .subtsec2 {
+      font-size: 1.2rem;
+      font-family: "BebasNeue-Regular";
+      font-style: normal; }
+    .servicios .div1 img {
+      height: 200px;
+      width: auto;
+      border-radius: 100px; }
+
+.nosotros {
+  grid-area: nosotros;
+  background-color: white;
+  margin-left: 30px;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  height: 600px; }
+  .nosotros .nostit {
+    text-align: center; }
+  .nosotros .nospar {
+    padding-left: 50px;
+    padding-right: 60px;
+    text-align: justify; }
+
+.contacto {
+  grid-area: contacto;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: whitesmoke;
+  height: 600px; }
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header" "c2nosotros c2nosotros" "c2nuestroequipo c2nuestroequipo" "footer footer"; }
+
+.c2nosotros {
+  grid-area: c2nosotros; }
+  .c2nosotros .parnos {
+    text-align: justify;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 10px; }
+
+.c2nuestroequipo {
+  grid-area: c2nuestroequipo; }
+  .c2nuestroequipo .section6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    display: flex; }
+    .c2nuestroequipo .section6 .imgnosotros {
+      height: 150px;
+      width: 220px;
+      border-radius: 100px;
+      margin: 10px;
+      padding: 0 15px; }
+    .c2nuestroequipo .section6 .textpers {
+      margin-top: 30px;
+      margin-right: 30px;
+      margin-left: 15px;
+      padding-right: 70px; }
+
+.servicios2 {
+  color: #201f1f;
+  text-align: center;
+  size: 2rem;
+  margin-bottom: 20px; }
+
+.detalleservicios {
+  display: flex;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 50px; }
+  .detalleservicios .bloqueservicio {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px; }
+    .detalleservicios .bloqueservicio .infolink {
+      color: #238181;
+      font-weight: bolder; }
+
+.titserviciosindiv {
+  text-align: center;
+  margin: 20px; }
+
+.servicio {
+  display: flex; }
+  .servicio .div2 .imgserviciosindiv {
+    height: 400px; }
+  .servicio .infoserviciosindiv {
+    margin-right: 100px; }
+
+.footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  height: 100%; }
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header" "video" "servicios" "nosotros" "contacto" "footer"; }
+  .header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 1.1rem;
+    height: 150px; }
+    .header .logo {
+      height: 40%;
+      margin: auto;
+      padding: auto; }
+    .header .nav {
+      width: auto;
+      margin: auto;
+      padding: auto; }
+  .video video {
+    width: 90%;
+    height: auto;
+    z-index: -2; }
+  .video .titsect2 {
+    font-size: 0.6rem;
+    color: black;
+    font-family: "CabinSketch-Regular";
+    z-index: -1;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .servicios {
+    height: auto;
+    text-align: center; }
+    .servicios .div1 {
+      padding: 30px;
+      text-align: center;
+      font-family: "CabinSketch-Regular"; }
+    .servicios img {
+      height: 30%;
+      border-radius: 100px; }
+    .servicios .titsec2 {
+      text-align: center;
+      padding-left: 0px;
+      padding-right: 0px; }
+  .nosotros {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 30px;
+    font-size: 1rem;
+    height: auto; }
+  .contacto {
+    padding-bottom: 30px;
+    height: auto;
+    font-size: 1rem; }
+  .section6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; }
+    .section6 .parrafonosotros {
+      margin-left: 10px; }
+  .c2nosotros .titulonosotros {
+    margin-left: 30px;
+    margin-top: 30px; }
+  .detalleservicios {
+    flex-direction: column;
+    justify-items: center; }
+  .servicio {
+    flex-direction: column;
+    justify-items: center; }
+    .servicio .div2 {
+      margin-left: 20px;
+      margin-right: 20px; }
+      .servicio .div2 .imgserviciosindiv {
+        height: 250px;
+        margin-left: 50px; }
+    .servicio .infoserviciosindiv {
+      margin-left: 70px; } }

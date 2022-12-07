@@ -1,0 +1,25 @@
+@mixin marginlr ($margizq,$margder){
+    margin-left: $margizq;
+    margin-right: $margder;
+} 
+
+.servicios2{
+        color: rgb(32, 31, 31);
+        text-align: center;
+        size: 2rem;
+        margin-bottom: 20px;
+        }
+.detalleservicios {
+            display: flex;
+            text-align: center;
+            @include marginlr(60px,60px);
+            margin-bottom: 50px;
+            .bloqueservicio{
+                @include marginlr(30px,30px);
+                padding: 20px;
+                .infolink{
+                    color: rgb(35, 129, 129);
+                    font-weight: bolder;
+                }
+            }    
+        }

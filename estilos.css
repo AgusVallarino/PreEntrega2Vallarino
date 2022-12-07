@@ -177,11 +177,7 @@ h1, h2, h3, h4{
     background-color: whitesmoke;
     height:600px;
 }
-.contacto .enviar{
-    height:15px;
-    width: 100px;
-    margin-left: 150px;
-}
+
 .footer { 
     grid-area: footer;
     background-color: black;

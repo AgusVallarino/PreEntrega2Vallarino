@@ -1,0 +1,46 @@
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "c2nosotros c2nosotros"
+      "c2nuestroequipo c2nuestroequipo"
+      "footer footer";
+  }
+
+  .c2nosotros{ 
+            grid-area: c2nosotros;  
+            .parnos{
+                text-align: justify;
+                margin:10px;
+                padding-left: 30px;
+                padding-right: 50px;
+                padding-bottom: 10px;
+                }
+
+    }
+.c2nuestroequipo{
+            grid-area: c2nuestroequipo; 
+            .section6{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 30px;
+                display: flex;
+                .imgnosotros{
+                    height: 150px;
+                    width: 220px;
+                    border-radius: 100px;
+                    margin:10px;
+                    padding: 0 15px;
+                }    
+                .textpers{
+                    margin-top: 30px;
+                    margin-right: 30px;
+                    margin-left: 15px;
+                    padding-right: 70px;
+                }
+            }
+   
+    }
