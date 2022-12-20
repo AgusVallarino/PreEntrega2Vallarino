@@ -20,7 +20,8 @@
     align-items: center;
     z-index: -2;
     & video {
-        height: 95%;
+        height: 100%;
+        width: 100%;
         z-index: -1;       
             }
     .titsect2{
@@ -41,19 +42,21 @@
         text-align: center;
         align-items: center;
         .titsec2{
-                text-align: left;
-                padding-left: 60px;
+                text-align: center;
+                font-size: 1.8rem;
+                margin-top: 10px;
                 }
         .div1{
             display:inline-block;
             margin: 0px auto;
             padding: 60px;
             text-align: center;
-            font-family:"CabinSketch-Regular";
+            font-family:$font2;
             .subtsec2{
                 font-size:1.2rem;
-                font-family:"BebasNeue-Regular";
+                font-family:$font2;
                 font-style: normal;
+                margin-top: 10px;
                     }
             img{
                 height: 200px;
@@ -83,7 +86,8 @@
         font-size:1.2rem;
         text-align: center;
         background-color: whitesmoke;
-        height:600px;
+        height:auto;
+        padding-bottom: 30px;
         }
 
 

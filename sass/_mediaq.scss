@@ -37,17 +37,16 @@
         z-index: -2;
     }
     .video .titsect2{
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         color:black;
         font-family:"CabinSketch-Regular";
         z-index: -1;
         text-align: center;
         justify-content: center;
         position:absolute;
-        top:50%;
-        left:50%;
+        top:22%;
+        left:30%;
         transform: translate(-50%, -50%);
-
     }
     .servicios { 
         height: auto;
@@ -74,6 +73,10 @@
         font-size: 1rem;
         height: auto;
     }
+    .bloqueservicio{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .contacto { 
         padding-bottom: 30px;
         height:auto;
@@ -87,7 +90,7 @@
         flex-direction:column; 
         .parrafonosotros{
             margin-left: 10px;
-        }
+                }
     }    
     .c2nosotros .titulonosotros{
         margin-left: 30px;
@@ -96,20 +99,34 @@
     .detalleservicios {    
         flex-direction: column;
         justify-items: center;
+        @include marginlr(20px,20px);
     }   
     .servicio{
         flex-direction: column;
         justify-items: center;
         .div2{
-            margin-left: 20px;
-            margin-right: 20px;
-            .imgserviciosindiv{
-                             height: 250px;
-                             margin-left: 50px;
-                                }
-            }
-        .infoserviciosindiv{
-                          margin-left: 70px;
-                        }
+            margin-left: 5px;
+            margin-right: 5px;
+            justify-content: center;
+                   
+            .infoserviciosindiv{
+                            margin-right: 2x;
+                            margin-left: 30px;
+                            .parrafosgestmant{
+                                    text-indent:5px;
+                                    margin: 5px;
+                                      }
+                          }
+                }
+            } 
+    .footer { 
+        display:block;
+        justify-content:center;
+        padding-left:5px;
+        padding-right: 2px;
         }
+    .container3{
+        height:50vh;
+    }
+    
 }

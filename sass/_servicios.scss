@@ -8,6 +8,10 @@
         text-align: center;
         size: 2rem;
         margin-bottom: 20px;
+        h1{
+            font-size: 2rem;
+            margin-top: 20px;
+        }
         }
 .detalleservicios {
             display: flex;
@@ -20,6 +24,15 @@
                 .infolink{
                     color: rgb(35, 129, 129);
                     font-weight: bolder;
-                }
+                }    
+                a.infolink:hover{
+                        font-size: larger;
+                        font-weight: bold;
+                        color:rgb(20, 96, 96);
+                    }
+                h2 {
+                    font-family: $font2;
+                    font-size: 1,4rem;
+                    }
             }    
         }

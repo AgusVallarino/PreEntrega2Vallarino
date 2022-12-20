@@ -1,13 +1,23 @@
 .titserviciosindiv{
     text-align: center;
-    margin: 20px;
+    margin-top: 30px;
+    font-family: $font2;
+    font-size: 1,5rem;
 }
 .servicio{
     display: flex;
+    margin-bottom: 40px;
     .div2 .imgserviciosindiv{
-        height:400px;
+        height:300px;
+        margin: 20px;
+        margin-left: 50px;
     }
     .infoserviciosindiv{
         margin-right: 100px;
+        margin-left: 50px;
+        .parrafosgestmant{
+            text-indent: 40px;
+            margin: 20px;
+        }   
     }
-}
+    }       
