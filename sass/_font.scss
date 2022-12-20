@@ -5,20 +5,20 @@
 }
 @font-face {
     font-family: "BebasNeue-Regular";
-    src: url(../‌Font/BebasNeue-Regular.ttf);
+    src: url(../‌font/bebasneueregular.ttf);
 }
 @font-face {
     font-family:"CabinSketch-Regular" ;
-    src: url(../‌Font/CabinSketch-Regular.ttf);
+    src: url(../‌Font/cabinsketchregular.ttf);
 }
 @font-face {
     font-family: "PTSansNarrow-Regular";
-    src: url(../‌Font/PTSansNarrow-Regular.ttf);
+    src: url(../‌Font/ptsansnarrowregular.ttf);
 }
 
-$font1:BebasNeue-Regular;
-$font2:CabinSketch-Regular;
-$font3:PTSansNarrow-Regular;
+$font1:bebasneueregular;
+$font2:cabinsketchregular;
+$font3:ptsansnarrowregular;
 
 body{
     font-family: $font3;

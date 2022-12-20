@@ -6,21 +6,21 @@
 
 @font-face {
   font-family: "BebasNeue-Regular";
-  src: url(../‌Font/BebasNeue-Regular.ttf); }
+  src: url(../‌font/bebasneueregular.ttf); }
 
 @font-face {
   font-family: "CabinSketch-Regular";
-  src: url(../‌Font/CabinSketch-Regular.ttf); }
+  src: url(../‌Font/cabinsketchregular.ttf); }
 
 @font-face {
   font-family: "PTSansNarrow-Regular";
-  src: url(../‌Font/PTSansNarrow-Regular.ttf); }
+  src: url(../‌Font/ptsansnarrowregular.ttf); }
 
 body {
-  font-family: PTSansNarrow-Regular; }
+  font-family: ptsansnarrowregular; }
 
 h1, h2, h3, h4 {
-  font-family: BebasNeue-Regular;
+  font-family: bebasneueregular;
   padding: 10px; }
 
 .header {
@@ -48,7 +48,7 @@ h1, h2, h3, h4 {
       list-style-type: none;
       margin: 0px auto;
       text-align: right;
-      font-family: "BebasNeue-Regular"; }
+      font-family: bebasneueregular; }
       .header .nav .menu .item {
         display: inline-block;
         position: relative;
@@ -95,7 +95,7 @@ h1, h2, h3, h4 {
     z-index: -1; }
   .video .titsect2 {
     font-size: 2rem;
-    font-family: "CabinSketch-Regular";
+    font-family: cabinsketchregular;
     z-index: -1;
     position: absolute;
     top: 65%;
@@ -118,10 +118,10 @@ h1, h2, h3, h4 {
     margin: 0px auto;
     padding: 60px;
     text-align: center;
-    font-family: CabinSketch-Regular; }
+    font-family: cabinsketchregular; }
     .servicios .div1 .subtsec2 {
       font-size: 1.2rem;
-      font-family: CabinSketch-Regular;
+      font-family: cabinsketchregular;
       font-style: normal;
       margin-top: 10px; }
     .servicios .div1 img {
@@ -220,13 +220,13 @@ h1, h2, h3, h4 {
       font-weight: bold;
       color: #146060; }
     .detalleservicios .bloqueservicio h2 {
-      font-family: CabinSketch-Regular;
+      font-family: cabinsketchregular;
       font-size: 1,4rem; }
 
 .titserviciosindiv {
   text-align: center;
   margin-top: 30px;
-  font-family: CabinSketch-Regular;
+  font-family: cabinsketchregular;
   font-size: 1,5rem; }
 
 .servicio {
@@ -395,6 +395,4 @@ h1, h2, h3, h4 {
     display: block;
     justify-content: center;
     padding-left: 5px;
-    padding-right: 2px; }
-  .container3 {
-    height: 100vh; } }
+    padding-right: 2px; } }
